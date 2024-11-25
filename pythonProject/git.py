@@ -1,6 +1,8 @@
 import os
-from typing import Optional, Tuple
+from typing import Optional , Tuple
+
 from pip._internal.vcs import VersionControl
+
 
 class Git(VersionControl):
     name = "git"

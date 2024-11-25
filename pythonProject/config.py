@@ -95,24 +95,37 @@ self.config[key] = value
 self.save_config ( )
 
 
-def perform_scan ( self , target_website , depth , threads , timeout , verbose , visited=None ) :
-	"""
+def perform_scan(self, target_website, depth, threads, timeout, verbose, visited=None):
+    """
+    Perform a vulnerability scan on the target website.
 
-		:param self:
-		:type self:
-		:param target_website:
-		:type target_website:
-		:param depth:
-		:type depth:
-		:param threads:
-		:type threads:
-		:param timeout:
-		:type timeout:
-		:param verbose:
-		:type verbose:
-		"""
-	set ( )
-	self.recursive_scan ( target_website , depth , visited , threads , timeout , verbose )
+    This function initiates the scanning process by setting up initial parameters
+    and calling the recursive scan method.
+
+    Parameters:
+    -----------
+    self : object
+        The instance of the class containing this method.
+    target_website : str
+        The URL of the website to be scanned.
+    depth : int
+        The maximum depth of recursion for the scan.
+    threads : int
+        The number of concurrent threads to use for scanning.
+    timeout : float
+        The timeout duration for network requests in seconds.
+    verbose : bool
+        If True, enables verbose output during the scan.
+    visited : set, optional
+        A set of already visited URLs (default is None).
+
+    Returns:
+    --------
+    None
+        This function doesn't return a value, but initiates the scanning process.
+    """
+    set()
+    self.recursive_scan(target_website, depth, visited, threads, timeout, verbose)
 
 
 def recursive_scan () :

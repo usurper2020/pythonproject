@@ -1,10 +1,11 @@
-import sys
 import argparse
+import sys
+
 from pip._vendor.pygments import highlight
-from pip._vendor.pygments.lexers import get_lexer_by_name, get_lexer_for_filename, guess_lexer, TextLexer
 from pip._vendor.pygments.formatters import get_formatter_by_name
-from pip._vendor.pygments.filters import get_filter_by_name
-from pip._vendor.pygments.util import ClassNotFound, OptionError
+from pip._vendor.pygments.lexers import get_lexer_by_name , get_lexer_for_filename , guess_lexer , TextLexer
+from pip._vendor.pygments.util import ClassNotFound , OptionError
+
 
 def main(args=sys.argv):
     """

@@ -6,13 +6,8 @@ import self
 from QShortcut
 from pybuild import pip
 
-pip
-install ( )
-requests
-beautifulsoup4
-from PySide6.QtWidgets import (
-	QMainWindow , QLineEdit ,
-	)
+pip install requests beautifulsoup4
+from PySide6.QtWidgets import QMainWindow QLineEdit
 
 settings_action = file_menu.addAction ( "Advanced Settings" )
 settings_action.triggered.connect ( self.show_settings_dialog )

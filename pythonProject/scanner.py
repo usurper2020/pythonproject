@@ -1,9 +1,10 @@
-import sys
 import logging
+import sys
+from datetime import datetime
+from urllib.parse import urljoin
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-from datetime import datetime
 
 
 def global_exception_handler ( exctype , value , traceback ) :
