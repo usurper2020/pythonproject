@@ -1,5 +1,3 @@
-import os
-from typing import Optional
 from pip._internal.vcs import VersionControl
 
 class Mercurial(VersionControl):
