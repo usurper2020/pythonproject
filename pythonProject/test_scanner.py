@@ -51,8 +51,8 @@ class TestScanner ( unittest.TestCase ) :
 
 	def test_check_sql_injection ( self ) :
 		# Add a test for SQL injection
-		self.assertTrue ( self.scanner.check_sql_injection ( "http://example.com/page?id=1" ) )
-		self.assertFalse ( self.scanner.check_sql_injection ( "http://example.com/page" ) )
+		self.assertTrue ( self.scanner.check_sql_injection ( "https://example.com/page?id=1" ) )
+		self.assertFalse ( self.scanner.check_sql_injection ( "https://example.com/page" ) )
 
 
 if __name__ == '__main__' :

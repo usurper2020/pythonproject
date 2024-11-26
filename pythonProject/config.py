@@ -161,8 +161,8 @@ QMessageBox.information ( self , "Report Generated" , "Report saved as {filename
 
 if not url :
 	raise ValueError ( "URL cannot be empty" )
-	if not url.startswith ( ('http://' , 'https://') ) :
-		url = 'http://' + url
+	if not url.startswith ( ('https://' , 'https://') ) :
+		url = 'https://' + url
 	# Use a regex pattern to validate URL format
 	pattern = re.compile (
 			r'^https?://(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$'

@@ -9,6 +9,15 @@ class Git(VersionControl):
 
     @classmethod
     def get_current_revision(cls, location: str, rev: Optional[str] = None) -> str:
+        """
+
+        :param location:
+        :type location:
+        :param rev:
+        :type rev:
+        :return:
+        :rtype:
+        """
         if rev is None:
             rev = "HEAD"
         current_rev = cls.run_command(
