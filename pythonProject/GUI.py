@@ -1,4 +1,9 @@
 def create_main_tab(self):
+    """
+
+    :param self:
+    :type self:
+    """
     main_tab = QWidget()
     main_layout = QVBoxLayout(main_tab)
 
