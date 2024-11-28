@@ -21,15 +21,45 @@ Returns:
 install_packages ( )
 install_dependencies ( )
 configure_nmap ( )
+
+
+def configure_paramiko () :
+	pass
+
+
 configure_paramiko ( )
 configure_scrapy ( )
 
 
-def configure_sqlalchemy () :
-	"""
+def configure_sqlalchemy():
+    """
+    Configure SQLAlchemy for the project.
 
-	"""
-	pass
+    This function sets up and configures SQLAlchemy, an SQL toolkit and Object-Relational 
+    Mapping (ORM) library for Python. It may include tasks such as:
+    - Setting up database connection strings
+    - Configuring database engines
+    - Creating session factories
+    - Setting up model bases
+    - Applying any project-specific SQLAlchemy configurations
+
+    Parameters:
+    None
+
+    Returns:
+    None
+    """
+    pass
 
 
-configure_sqlalchemy ( )
+configure_sqlalchemdef install_dependencies():
+    """
+    Install additional dependencies required for the project.
+    """
+    # System-level dependencies
+    os.system('apt-get update && apt-get install -y libssl-dev')
+    
+    # Additional Python packages
+    additional_packages = ['cryptography', 'beautifulsoup4']
+    for package in additional_packages:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])y ( )
